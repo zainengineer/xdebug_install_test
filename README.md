@@ -132,6 +132,13 @@ or inside your visual host
 ** you might see something like Argument for @NotNull parameter 'remoteFileUrl' of com/jetbrains/php/debug/xdebug/debugger/XdebugDriver.onBreak must not be null 
 ** or upgrade phpstorm
 
+#### Check Listening
+Use dbgpClient
+https://xdebug.org/docs/dbgpClient
+
+it can help verify if issue with IDE listening settings
+if dbgpClient listens properly but IDE does not
+check if issue is limited to web interface, in that case issue might be Servers setting of PHPStorm
 
 ### Misc
 
