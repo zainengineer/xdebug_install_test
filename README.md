@@ -140,6 +140,8 @@ it can help verify if issue with IDE listening settings
 if dbgpClient listens properly but IDE does not
 check if issue is limited to web interface, in that case issue might be Servers setting of PHPStorm
 
+in PHPStorm to debug check `Break at first line in PHP Scripts` and disable `Ignore external connections through unregistered server configuration`
+
 ### Misc
 
     # PHPStorm remote call plugin https://plugins.jetbrains.com/plugin/6027-remote-call
