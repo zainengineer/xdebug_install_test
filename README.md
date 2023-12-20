@@ -104,6 +104,10 @@ php -dxdebug.remote_enable=1  "$@"
 * PHPStorm > Setting > Languages & FrameWorks > PHP > Servers
 * run unit tests like `xdebug_cli local.domain.com zain_custom/external/phpunit-4.6.6/phpunit --group groupname`
 
+### composer
+
+export COMPOSER_ALLOW_XDEBUG=1 && composer install
+
 ### soap
 * disable browser xdebug cookie
 * append `?XDEBUG_SESSION=1234` OR `&XDEBUG_SESSION=1234` to soap request url
