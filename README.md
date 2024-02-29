@@ -13,6 +13,12 @@ Install XDebug and troubleshoot why it is not working
     #xdebug.remote_host=192.168.131.1
     #as first ip in vagrant is ip of host
 
+Modern xdebug settings
+
+    zend_extension = xdebug
+    xdebug.mode = "debug,develop"
+    xdebug.file_link_format = "http://localhost:63342/api/file/%f:%l"
+
 ## sample.php
 
     <?php
@@ -146,3 +152,6 @@ in PHPStorm to debug check `Break at first line in PHP Scripts` and disable `Ign
 
     # PHPStorm remote call plugin https://plugins.jetbrains.com/plugin/6027-remote-call
     xdebug.file_link_format = "http://localhost:8091/?message=%f:%l"
+
+    https://plugins.jetbrains.com/plugin/19991-ide-remote-control
+    xdebug.file_link_format = "http://localhost:63342/api/file/%f:%l"
